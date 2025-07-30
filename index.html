@@ -2,10 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>formulario-registro</title>
 </head>
 <body>
     <!-- tengo teclado ingles por eso no tengo muchos simbolos -->
     <h1>Registrate y unete a la comunidad!</h1>
+    <form action="#">
+        <div>
+            <label for="name">Nombre: </label>
+            <input type="text" id="name">
+        </div>  
+        <div>
+            <label for="lastname">Apellido: </label>
+            <input type="text" id="lastname">
+        </div>    
+        <div>
+            <label for="email">Correo Electronico: </label>
+            <input type="email" id="email">
+        </div>  
+        <div>
+            <label for="psw">Contrasena</label>
+            <input type="password" id="psw">
+        </div>
+        <div>
+            <label for="confirm-psw">Confirmar Contrasena</label>
+            <input type="password" id="confirm-psw">
+        </div>
+        <div>
+            <label for="dob">fecha de nacimiento:</label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="">Genero:</label>
+            <input type="radio" id="masc" name="gender">
+            <label for="masc">Maculino</label>
+
+            <input type="radio" id="fem" name="gender">
+            <label for="fem">Femenino</label>
+
+            <input type="radio" id="none" name="gender">
+            <label for="none">Prefiero no decir</label>
+        </div>
+        <div>
+            <input type="checkbox" id="news-letter">
+            <label for="news-letter">Suscribete a nuestro boletin de noticias</label>
+        </div>
+        <div>
+            <label for="self-desc">Una descripcion de mi mismo:</label>
+            <div>
+                <textarea name="self-desc" id="self-desc"></textarea>
+            </div>
+        </div>
+        <div>
+            <label for="interest">Selecciona tu intereses:</label>
+            <div>
+                
+                <select name="interest" id="interest"  size="4">
+                    <option value="music">Musica</option>
+                    <option value="sports">Deportes</option>
+                    <option value="travel">Viajes</option>
+                    <option value="tech">Tecnologia</option>
+                </select>
+            </div>
+        </div>
+        <button>Registrarse!</button>
+    </form>
 </body>
 </html>
